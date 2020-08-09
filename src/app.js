@@ -4,6 +4,7 @@ const path = require('path');
 const hbs = require('hbs');
 
 const app = new express();
+const port = process.env.PORT || 3000
 
 var pubfolder = path.join(__dirname, "../public");
 var viewfolder = path.join(__dirname, "../templates/views");
@@ -60,7 +61,7 @@ app.get("*",(req, res) => {
 
 
 
-app.listen(3000, ()=>{
-    console.log("-------------server is up on port 3000!------------------")
+app.listen(port, ()=>{
+    console.log("-------------server is up on port: ------------------", port)
 })
 

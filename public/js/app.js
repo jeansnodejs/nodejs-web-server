@@ -4,7 +4,7 @@ const getWeatherInfoFromClient = (city) => {
     if (!city) 
         return console.log('client : Please enter the name of the city!')
 
-    const url = 'http://localhost:3000/weather?city=' + city;
+    const url = '/weather?city=' + city;
 
     var messageone = document.querySelector('#msg-1');
     var messagetwo = document.querySelector('#msg-2');
